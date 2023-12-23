@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  background-color: #fff;
+}
+.sidebar {
+  width: 200px;
+  background-color: #fff;
+  height: 800px;
+  box-shadow: 2px 2px 2px #e9e4e4;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.sidebar ul li {
+  list-style: none;
+  margin: 0;
+}
+.sidebar ul li:hover {
+  background-color: #df3434;
+  cursor: pointer;
+}
+.sidebar ul {
+  line-height: 30px;
+  font-size: smaller;
+  width: fit-content;
+}
+.main {
+  margin-left: 12px;
+  display: grid;
+  grid-template-columns: 500px 600px;
+  grid-template-rows: 300px 300px;
+  grid-gap: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .main {
+    display: grid;
+    grid-template-columns: auto;
+    width: auto;
+    padding: 12px;
+  }
+}
+.main .event,
+.main .score,
+.main .project {
+  background: #fff;
+  border-radius: 12px;
+  margin: 12px;
+  border: 2px solid #e9e4e4;
+}
+hr {
+  border-color: black;
+}
+.f1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serifa;
+  color: black;
+  font-size: large;
+}
+.heading {
+  background: #f4eeeebb;
+  height: 70px;
+  padding: 12px;
+  display: flex;
+  gap: 12px;
+}
+.score .head p {
+  text-align: end;
+}
+span {
+  background: #3b3b3b;
+  color: whitesmoke;
+  border-radius: 5px;
+  padding: 3px;
+}
+.sidebar hr {
+  border-color: rgba(235, 231, 225, 0.589);
+}
